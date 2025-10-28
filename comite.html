@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Propuesta de Mejora - Lógica de Programación | UMB Bogotá (Oct 2025)</title>
+  <style>
+    :root{--primary:#0b5cff;--accent:#0b8f6b;--muted:#6b7280;--bg:#f7fafc;--card:#ffffff}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+    body{background:linear-gradient(180deg,#f3f6fb 0%,var(--bg) 100%);color:#0f1724}
+    .container{max-width:1000px;margin:36px auto;padding:28px}
+    header{display:flex;align-items:center;gap:18px}
+    .logo{width:78px;height:78px;border-radius:8px;background:#e6eefc;display:flex;align-items:center;justify-content:center;color:var(--primary);font-weight:700}
+    h1{margin:0;font-size:20px}
+    .meta{color:var(--muted);font-size:13px}
+    nav{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
+    .btn{background:var(--primary);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600;font-size:13px}
+    .ghost{background:transparent;border:1px solid #e6eefc;color:var(--primary)}
+    .card{background:var(--card);border-radius:12px;padding:18px;margin-top:18px;box-shadow:0 6px 18px rgba(12,44,84,0.06)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    .section-title{display:flex;align-items:center;justify-content:space-between}
+    .kpi{display:flex;gap:12px}
+    .kpi > div{background:#f1f7ff;padding:8px 12px;border-radius:10px;font-size:13px}
+    .accordion{margin-top:12px}
+    .accordion-item{border-top:1px solid #eef2f7;padding:12px 0}
+    .accordion-item summary{cursor:pointer;font-weight:600;list-style:none;outline:none}
+    .modules ul{padding-left:18px}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+    .side{position:sticky;top:28px}
+    .download{display:flex;gap:8px;margin-top:12px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#eef7f3;color:var(--accent);font-weight:700;font-size:12px}
+    pre{background:#0b1220;color:#e6f0ff;padding:12px;border-radius:8px;overflow:auto}
+    @media(max-width:960px){.grid{grid-template-columns:1fr}.side{position:static}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">UMB</div>
+      <div>
+        <h1>Propuesta de Mejora Curricular – <span style="color:var(--primary)">Lógica de Programación (090102-051)</span></h1>
+        <div class="meta">Universidad Manuela Beltrán — Sede Bogotá · Octubre de 2025</div>
+      </div>
+    </header>
+
+    <nav>
+      <a class="btn" href="#resumen">Resumen ejecutivo</a>
+      <a class="btn ghost" href="#modulos">Propuesta por módulos</a>
+      <a class="btn ghost" href="#evaluacion">Evaluación</a>
+      <a class="btn ghost" href="#implementacion">Implementación</a>
+      <a class="btn" href="#descargar">Descargar</a>
+    </nav>
+
+    <div class="grid">
+      <main>
+        <section id="resumen" class="card">
+          <div class="section-title">
+            <h2>Resumen ejecutivo</h2>
+            <div class="kpi">
+              <div>Modalidad: Presencial / Híbrida</div>
+              <div class="pill">Pilotaje 2026-1</div>
+            </div>
+          </div>
+          <p style="color:var(--muted);margin-top:8px">Esta propuesta actualiza la asignatura <strong>Lógica de Programación</strong> integrando herramientas de Inteligencia Artificial como soporte pedagógico, manteniendo pruebas individuales sin IA para garantizar adquisición de competencias básicas.</p>
+
+          <div class="card" style="margin-top:12px">
+            <h3 style="margin:0 0 8px 0">Objetivo general</h3>
+            <p>Fortalecer la competencia lógica y algorítmica del estudiante mediante la integración progresiva de IA y entornos modernos (Python, GitHub Copilot), promoviendo pensamiento crítico, depuración consciente y reflexión ética.</p>
+          </div>
+
+          <div class="card" style="margin-top:12px">
+            <h3 style="margin:0 0 8px 0">Principales cambios</h3>
+            <ul>
+              <li>Incorporación de IA como tutor, auditor y asistente de refactorización.</li>
+              <li>Transición gradual de PSeInt a Python para prácticas.</li>
+              <li>Bitácora de prompts obligatoria en prácticas (evidencia y reflexión).</li>
+              <li>Evaluaciones mixtas: parciales sin IA + proyectos con evidencias IA-humano.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="modulos" class="card modules">
+          <h2>Propuesta por módulos</h2>
+          <p style="color:var(--muted)">Resumen de las intervenciones didácticas y actividades propuestas por cada módulo.</p>
+
+          <div class="accordion">
+            <details class="accordion-item" open>
+              <summary>Módulo 1 — Fundamentos</summary>
+              <div>
+                <p><strong>Objetivo:</strong> Variables, operadores, pseudocódigo y DFD.</p>
+                <ul>
+                  <li><strong>Actividades clave:</strong> "El Tutor Infinito" (IA genera analogías), "Auditor de Lógica" (comparar soluciones IA vs estudiante), generación de infografías conceptuales.</li>
+                  <li><strong>Herramientas:</strong> PSeInt (base) + ChatGPT/Gemini para tutoría conceptual.</li>
+                  <li><strong>Evaluación:</strong> Guías de laboratorio con bitácora de prompts y reflexión (parte de la nota).</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="accordion-item">
+              <summary>Módulo 2 — Control y Modularidad</summary>
+              <div>
+                <p><strong>Objetivo:</strong> Modularización, funciones y buenas prácticas.</p>
+                <ul>
+                  <li><strong>Actividades clave:</strong> "Del Espagueti al Módulo" (refactorización asistida por Copilot), Programación basada en comentarios.</li>
+                  <li><strong>Herramientas:</strong> Python básico, GitHub Copilot, herramientas de análisis automático de código.</li>
+                  <li><strong>Evaluación:</strong> Informe de refactorización con evidencia antes/después y justificación del diseño.</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="accordion-item">
+              <summary>Módulo 3 — Introducción a POO</summary>
+              <div>
+                <p><strong>Objetivo:</strong> Principios de clases, objetos, encapsulamiento.</p>
+                <ul>
+                  <li><strong>Actividades clave:</strong> "Debatiendo con la IA" (co-diseño de sistemas), traducción de procedural a OOP.</li>
+                  <li><strong>Herramientas:</strong> Copilot avanzado, Lucidchart/Miro, Python.</li>
+                  <li><strong>Evaluación:</strong> Proyecto final con informe IA-humano y reflexión ética sobre autoría.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <section id="evaluacion" class="card">
+          <h2>Estructura de evaluación propuesta</h2>
+          <p style="color:var(--muted)">Se propone una distribución equilibrada que combina control individual con evidencias de trabajo asistido por IA.</p>
+          <table style="width:100%;border-collapse:collapse;margin-top:12px">
+            <tr style="background:#f8fafc"><th style="text-align:left;padding:8px">Componente</th><th style="text-align:left;padding:8px">Porcentaje</th><th style="text-align:left;padding:8px">Nota</th></tr>
+            <tr><td style="padding:8px">Guías de laboratorio</td><td style="padding:8px">35%</td><td style="padding:8px">Incluyen bitácora de prompts y reflexión conceptual</td></tr>
+            <tr><td style="padding:8px">Trabajo autónomo / informe</td><td style="padding:8px">15%</td><td style="padding:8px">Refactorización o diseño asistido por IA</td></tr>
+            <tr><td style="padding:8px">Primer parcial (sin IA)</td><td style="padding:8px">20%</td><td style="padding:8px">Evaluación individual teórico-práctica</td></tr>
+            <tr><td style="padding:8px">Proyecto final</td><td style="padding:8px">15%</td><td style="padding:8px">Informe IA-humano + reflexión ética</td></tr>
+            <tr><td style="padding:8px">Parcial final (sin IA)</td><td style="padding:8px">15%</td><td style="padding:8px">Prueba teórico-práctica</td></tr>
+          </table>
+        </section>
+
+        <section id="implementacion" class="card">
+          <h2>Plan de implementación</h2>
+          <ol>
+            <li><strong>Pilotaje controlado:</strong> Grupo de máximo 25 estudiantes en 2026-1.</li>
+            <li><strong>Formación docente:</strong> Taller de 8 horas en uso pedagógico de IA.</li>
+            <li><strong>Monitoreo y evaluación:</strong> Informe al final del semestre con métricas de rendimiento y encuestas de percepción.</li>
+          </ol>
+
+          <h3 style="margin-top:12px">Indicadores de éxito</h3>
+          <ul>
+            <li>Incremento en puntajes de razonamiento algorítmico en parciales sin IA.</li>
+            <li>Mejora en la calidad de documentación y pruebas en proyectos.</li>
+            <li>Percepción docente/estudiantes sobre la utilidad pedagógica de la IA &gt; 75% positiva.</li>
+          </ul>
+        </section>
+
+        <section id="conclusiones" class="card">
+          <h2>Conclusión</h2>
+          <p>La propuesta equilibra rigor y modernidad: mantiene evaluaciones individuales sin IA para certificar competencias básicas, al tiempo que incorpora la IA como herramienta para escalar el pensamiento crítico y las capacidades de diseño.</p>
+        </section>
+      </main>
+
+      <aside class="side">
+        <div class="card">
+          <h3>Acciones rápidas</h3>
+          <div style="color:var(--muted);font-size:13px">Descarga, imprime o comparte esta versión digital con los miembros del comité.</div>
+
+          <div class="download" id="descargar">
+            <a class="btn" href="sandbox:/mnt/data/Propuesta_Comite_LP_UMB_2025.docx" target="_blank">Descargar documento (DOCX)</a>
+            <a class="btn ghost" id="printBtn" href="#">Imprimir</a>
+          </div>
+
+          <hr style="margin:12px 0" />
+
+          <h4 style="margin:6px 0">Puntos de discusión para el Comité</h4>
+          <ol style="font-size:14px;color:var(--muted)">
+            <li>Autorización para pilotar en 2026-1.</li>
+            <li>Asignación de recursos para formación docente y herramientas (Copilot licencias).</li>
+            <li>Definición de indicadores y calendario de evaluación del piloto.</li>
+          </ol>
+
+          <hr style="margin:12px 0" />
+          <div style="font-size:13px;color:var(--muted);display:flex;gap:8px;align-items:center">
+            <div style="width:10px;height:10px;border-radius:3px;background:#ffdede"></div>
+            <div>Versión: Pilotaje · Octubre 2025</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h4>Contacto</h4>
+          <div style="color:var(--muted);font-size:13px">Líder de asignatura: [Nombre del líder de asignatura]<br/>Correo: leader@example.edu.co<br/>Facultad de Ingeniería – Universidad Manuela Beltrán</div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      Universidad Manuela Beltrán — Sede Bogotá · Propuesta preparada para Comité Curricular · Octubre de 2025
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('printBtn').addEventListener('click', function(e){e.preventDefault();window.print();});
+  </script>
+</body>
+</html>
